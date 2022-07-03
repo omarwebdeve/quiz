@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz app with 10 minute code</title>
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="home">
+        <div class="quiz_apps">
+            <img class="apple_body" src="image/bg.png" alt="">
+            <div class="top"></div>
+            <div class="main_scen">
+                <div class="clock_date">
+                    <h2>9:00</h2>
+                    <h3>Tuesday, September 15</h3>
+                </div>
+                <div class="finger_load_hide">
+                    <img class="finger" src="image/fingerprint.png" alt="">
+                </div>
+            </div>
+            <div class="icon">
+                <img class="apps_icon" src="image/icon.jpg" alt="icon">
+            </div>
+    </section>
+    <section class="page_one quiz_apps_area">
+        <div class="apps_bg">
+            <div class="top_two"></div>
+            <div class="frist_page">
+                <div class="ques_image">
+                    <img src="image/quiz.png" alt="">
+                    <div class="contant">
+                        <h3>Quiz With Fun Every time </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus quo omnis qui sunt animi
+                            quod totam rerum debitis. Qui, neque. elit. Delectus quo omnis qui sunt animi quod totam
+                            rerum debitis. Qui, neque.elit. Delectus quo omnis qui sunt animi
+                        </p>
+                    </div>
+                    <div class="btn" id="btnOne">
+                        <input type="submit" value="Start">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page_two quiz_apps_area">
+        <div class="apps_bg">
+            <div class="top_two"></div>
+            <div class="page_two1">
+                <div class="header">Some Rolls of this Quiz </div>
+                <div class="rolls">
+                    <ol>
+                        <li> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, non. </li><br>
+                        <li> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, non. </li><br>
+                        <li> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, non. </li><br>
+                        <li> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, non. </li><br>
+                        <li> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, non. </li>
+                    </ol>
+                </div>
+                <div class="btn_left" id="exitQuiz">
+                    <input type="submit" value="Exit Quiz">
+                </div>
+                <div class="btn" id="btnTwo">
+                    <input type="submit" value="Continue">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page_tree quiz_apps_area">
+        <div class="apps_bg">
+            <div class="top_two"></div>
+            <div class="page_tree1">
+                <div class="main_contain">
+                    <div class="header">Start Exam</div>
+                    <div class="time_count">
+                        <div class="time" id="time">
+                            Time Left<span class="secund" id="count" >15</span>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="quiz_one">
+                        <ol>
+                            <!-- question show from js -->
+                            <li class="que_text"></li>
+                            <div class="option"></div>
+                        </ol>
+                    </div>
+                </div>
+                <div class="btn" id="queNext">
+                    <input type="submit" value="Next">
+                </div>
+                <div class="count">
+                    <!--1/Question length-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page_four quiz_apps_area">
+        <div class="apps_bg">
+            <div class="top_two"></div>
+            <div class="result_image">
+                <img src="image/result.png" alt="">
+            </div>
+            <div class="result_content">
+                <p>You Have Finished Exam!</p>
+                <p><span id="caryOn">Sorry Try again 🤔</span> You Get <span id="total_marks">0</span> Out of <span id="totalQues"> <!-- total question --></span> </p>
+            </div>
+            <div class="result_btn">
+                <div class="result_btn_one">
+                    <input type="submit" id="quitQuiz" value="Quit Quiz">
+                </div>
+                <div class="result_btn_two">
+                    <input type="submit" id="replay" value="Replay">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="code.js"> </script>
+    <script src="question.js"> </script>
+</body>
+</html>
